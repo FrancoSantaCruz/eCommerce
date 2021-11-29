@@ -9,12 +9,14 @@
     El sitio está enfocado a un rango de edad adulta de entre 30 a 70 años con cierto nivel socio-economico medio o alto.
 
 ## Integrantes del proyecto
+    - Santa Cruz, Franco Agustín
 
 
 ## Referencias
 
-    <Aca hay que poner las paginas de las cuales nos inspiramos (al menos 5)>
+    -www.wisconsin.com.ar
+    -
+    -
+    -
+    -
 
-
-
-# Test Solucion de commit. 
