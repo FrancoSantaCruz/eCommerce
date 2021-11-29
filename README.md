@@ -10,7 +10,7 @@
 
 ## Integrantes del proyecto
     - Santa Cruz, Franco Agustín
-
+   -Basterra, Ignacio Manuel
 
 ## Referencias
 
