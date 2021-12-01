@@ -10,6 +10,7 @@
 
 ## Integrantes del proyecto
     - Santa Cruz, Franco Agustín
+    - Rodrigo Acevedo
 
 
 ## Referencias
