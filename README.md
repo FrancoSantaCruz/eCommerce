@@ -10,8 +10,13 @@
 
 ## Integrantes del proyecto
     - Santa Cruz, Franco Agustín
+<<<<<<< HEAD
     - Rodrigo Acevedo
 
+=======
+   -Basterra, Ignacio Manuel
+    - Visentin, Italo
+>>>>>>> 0b28034f082549485822a0534e6616e622c5bb07
 
 ## Referencias
 
