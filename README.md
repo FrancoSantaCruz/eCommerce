@@ -1,4 +1,4 @@
-### Proyecto: grupo_1_eCommers
+# Proyecto: grupo_1_eCommers
 
 ## Servicios y productos que ofrece nuestro sitio
     Nuestro sitio ofrece la venta y distribucion de nuestra selectas marcas de Whiskys. A su vez, cada producto viene acompañado de información pertinenete para facilitar la elección del cliente. 
@@ -10,12 +10,13 @@
 
 ## Integrantes del proyecto
     - Santa Cruz, Franco Agustín
-   -Basterra, Ignacio Manuel
+    - Basterra, Ignacio Manuel
     - Visentin, Italo
+    - Rodrigo Acevedo
 
 ## Referencias
 
-    -www.wisconsin.com.ar
+    - www.wisconsin.com.ar
     -
     -
     -
