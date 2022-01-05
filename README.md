@@ -20,3 +20,6 @@
     - www.jimbeam.com/es/bourbons/#slider-1 
     - www.themacallan.com/es/shop#
 
+## Tablero de trabajo
+
+    - https://trello.com/b/3vgNWjFm/sprint-2
