@@ -16,10 +16,11 @@
 
     - www.wisconsin.com.ar
     - www.whiskypedia.com.ar
-    - www.thefamousgrouse.com
+    - www.thefamousgrouse.com (Tip)
     - www.jimbeam.com/es/bourbons/#slider-1 
     - www.themacallan.com/es/shop#
-
+    - www.vinosyspirits.com/ (Fo)
+    
 ## Tablero de trabajo
 
     - https://trello.com/b/3vgNWjFm/sprint-2

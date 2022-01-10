@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/headerSt.css">
+    <link rel="stylesheet" href="../public/css/mainSt.css">
     <title>Say Whisky!</title>
+    <!--
+        Cinzel Font & Philosopher
+        Cinzel Tittle
+        Philosopher Text
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Productos</li>
-                <li>Acerca de</li>
+        <div class="logo">
+            <a href='/'><img src="../public/images/LogowTag.png" alt="Logo header" width="10%" height="10%"></a>
+        </div>
+        <div class="test">
+            <ul id="bar1">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="#">Acerca de</a></li>
             </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>Register</li>
-                <li>Login</li>
+            <ul id="bar2">
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
-        </nav>
+        </div>
+        
+        <div class="container__cart">
+            <div class="cart">
+                <a href="/cart"><i class="fab fa-opencart"></i></a>
+            </div>
+        </div>
+
+        <div class="searchbar">
+            <form action="">
+                <input id="sb__input" type="search" placeholder="Buscar..." />
+                <i class="fa fa-search"></i>
+            </form>
+        </div>
+
     </header>
-
-
-
     <main>
+        <div class="banner_wrapper">
+            <div class="next_arrow"></div>
+            <div class="prev_arrow"></div>
+            <div class="banner">
+                <input type="radio" name="xx">
+                <input type="radio" name="xx" id="x1">
+                <label for="x3"></label>
+                <div class="banner_box">
+                    <img src="/src/public/images/banner1.jpg" alt="banner1">
+                </div>
+        
+                <input type="radio" name="xx">
+                <input type="radio" name="xx" id="x2">
+                <label for="x1"></label>
+                <div class="banner_box">
+                    <img src="/src/public/images/banner2.jpg" alt="banner2">
+                </div>
+        
+                <input type="radio" name="xx">
+                <input type="radio" name="xx" id="x3">
+                <label for="x2"></label>
+                <div class="banner_box">
+                    <img src="/src/public/images/banner3.jpg" alt="banner3">
+                </div>
+        
+        
+            </div>
+        </div>   
 
     </main>
 
@@ -37,6 +88,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
