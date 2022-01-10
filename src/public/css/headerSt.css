@@ -13,11 +13,12 @@ header{
 
 header a{
     font-family: 'Cinzel', serif;
+    font-weight: 400;
     color: rgb(196, 166, 0);
 }
 
 body{
-    background-image: url('https://i.ibb.co/pW281fP/bg5.jpg');
+    background-image: url('/public/images/bg5byndesenfocado.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -94,7 +95,7 @@ form{
     transition: 1.5s;
 }
 
-input#sb__input{
+input{
     position: absolute;
     top:0;
     left: 0;
@@ -129,7 +130,7 @@ form:hover{
     cursor: pointer;
 }
 
-form:hover input#sb__input{
+form:hover input{
     display: block;
 }
 
