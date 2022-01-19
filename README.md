@@ -8,9 +8,6 @@
 
 ## Integrantes del proyecto
     - Santa Cruz, Franco Agustín
-    - Basterra, Ignacio Manuel
-    - Visentin, Italo
-    - Acevedo, Rodrigo
 
 ## Referencias
 
