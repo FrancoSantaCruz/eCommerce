@@ -1,33 +1,16 @@
 const express = require('express');
-const app = express();
-app.use(express.static('src'));
+const path = require('path');
+const app = express(); 
 
-/*
-app.set('port',process.env.PORT || 3000)
+app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'ejs');
+app.set('views', path.resolve(__dirname, './views'));
 
-app.listen(app.get('port'),() => console.log('On'+app.get('port')))
-*/
+app.listen(app.get('port'), () => console.log('listening on port ' + app.get('port')));
 
-app.listen(3000, ()=>{
-    console.log('Servidor funcionando');
-});
+app.use(express.static(path.resolve(__dirname, '../public')));
 
-app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/public/index.html');
-});
+app.use(require('./middlewares/user'));
 
-app.get('/productos', (req,res)=>{
-    res.sendFile(__dirname + '/views/productDetails.html');
-});
 
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
-});
-
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/views/login.html');
-});
-
-app.get('/cart', (req,res)=>{
-    res.sendFile(__dirname + '/views/cart.html');
-});
+app.use(require('./routes/main'));

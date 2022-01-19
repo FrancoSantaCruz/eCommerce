@@ -2,28 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="../public/css/headerSt.css">
-    <link rel="stylesheet" href="../public/css/mainSt.css">
-    <title>Say Whisky!</title>
-    <!--
-        Cinzel Font & Philosopher
-        Cinzel Tittle
-        Philosopher Text
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Philosopher&display=swap"
-        rel="stylesheet">
+    <%- include('./includes/head') %> 
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href='/'><img src="../public/images/LogowTag.png" alt="Logo header" width="10%" height="10%"></a>
+            <a href='/'><img src="../assets/LogowTag.png" alt="Logo header" width="10%" height="10%"></a>
         </div>
         <div class>
             <ul id="bar1">
@@ -54,19 +39,19 @@
     <main>
         <section class="banner">
             <div class="slide-container">
-                <div class="slide-box" style="background-image: url('../public/images/banner1.jpg');">
+                <div class="slide-box" style="background-image: url('../assets/banner1.jpg');">
                     <div class="slide-box-containt">
                         <h2>Nuevos ingresos exclusivos</h2>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
                     </div>
                 </div>
-                <div class="slide-box" style="background-image: url('../public/images/banner2.jpg');">
+                <div class="slide-box" style="background-image: url('../assets/banner2.jpg');">
                     <div class="slide-box-containt">
                         <h2>Ultimos disponibles</h2>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
                     </div>
                 </div>
-                <div class="slide-box" style="background-image: url('../public/images/banner3.jpg');">
+                <div class="slide-box" style="background-image: url('../assets/banner3.jpg');">
                     <div class="slide-box-containt">
                         <h2>Kits para mixologia botanica</h2>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque praesentium</p>
