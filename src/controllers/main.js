@@ -1,9 +1,5 @@
-const { hyphenToCamel } = require('ejs/lib/utils');
-const path = require('path');
-const index = (req,res) => res.render('index',{
-    visible:true,
-    items:[1,2,3,4,5]
-});
+const controller = {
+    index: (req,res) => res.render('./website/index')
+}
 
-
-module.exports = {index}
+module.exports = controller;

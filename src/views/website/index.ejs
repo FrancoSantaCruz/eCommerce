@@ -2,39 +2,12 @@
 <html lang="en">
 
 <head>
-    <%- include('./includes/head') %> 
+    <%- include('../includes/head') %> 
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <a href='/'><img src="../assets/LogowTag.png" alt="Logo header" width="10%" height="10%"></a>
-        </div>
-        <div class>
-            <ul id="bar1">
-                <li><a href="/">inicio</a></li>
-                <li><a href="/productos">productos</a></li>
-                <li><a href="#">acerca de</a></li>
-            </ul>
-            <ul id="bar2">
-                <li><a href="/register">Register</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
-        </div>
-
-        <div class="container__cart">
-            <div class="cart">
-                <a href="/cart"><i class="fab fa-opencart"></i></a>
-            </div>
-        </div>
-
-        <div class="searchbar">
-            <form action="">
-                <input type="search" placeholder="Buscar..." />
-                <i class="fa fa-search"></i>
-            </form>
-        </div>
-
+        <%- include('../includes/header') %>
     </header>
     <main>
         <section class="banner">
