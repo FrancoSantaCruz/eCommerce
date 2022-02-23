@@ -1,0 +1,88 @@
+.info{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(59, 54, 54, 0.6);
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+/*
+            **********
+            BLOQUE UNO
+            **********
+*/
+
+.bloqueUno figure img{
+    width: 8em;
+    height: 8em;
+}
+
+div#contacts a{
+    color: inherit;
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+
+
+div#info{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+/*
+            **********
+            BLOQUE DOS
+            **********
+*/
+
+.bloqueDos{
+    display: flex;
+}
+
+.bloqueDos ul{
+    flex-direction: row;
+    margin: 50px;
+    color: rgba(255, 174, 0, 0.596);
+}
+
+
+/*
+            **********
+            BLOQUE TRES
+            **********
+*/
+
+.bloqueTres p{
+    padding-top: 50px;
+    font-size: 17px;
+    align-items: center;
+    color: rgba(255, 174, 0, 0.596);
+}
+
+.bloqueTres i{
+    font-size: 3em;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+
+
+/*
+            *****************
+            SECTION COPYRIGHT
+            *****************
+*/
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 174, 0, 0.596); 
+}
+
+.copyright a{
+    text-decoration:underline;
+    color: inherit;
+}
+

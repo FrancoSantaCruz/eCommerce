@@ -17,6 +17,9 @@
     - www.jimbeam.com/es/bourbons/#slider-1 
     - www.themacallan.com/es/shop#
     - www.vinosyspirits.com/ (Fo)
+    - www.elgatoylacaja.com/
+    - https://tienda.luigibosca.com/
+    
     
 ## Tablero de trabajo
 

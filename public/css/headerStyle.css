@@ -1,0 +1,192 @@
+header{
+    height: 150px;
+    background: rgba(37, 37, 37, 0.9);
+}
+
+header a{
+    color: silver;
+}
+/*
+        **********
+        LOGO IMAGE
+        **********
+*/
+
+figcaption {
+    display: none;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    position: relative;
+    top: 45px;
+    width: 12em;
+    height: 12em;
+}
+
+/*
+        ************
+        NAV ID FIRST
+        ************
+*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav#first{
+    justify-content: left;
+    position: relative;
+	left: 100px;
+    bottom: 75px;
+}
+
+nav#first a{
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+
+
+/*
+        ***********************
+        LOGIN & REGISTER BUTTON
+        ***********************
+*/
+
+.fa-solid.fa-user{
+	color: rgb(255, 255, 255);
+}
+
+.fa-solid.fa-cart-shopping{
+	color: rgb(255, 255, 255);
+}
+
+/*
+        ***************************
+        SECOND NAV & PROFILE BUTTON
+        ***************************
+*/
+
+.needs{
+	display: flex;
+	
+}
+nav#second{
+	flex-direction: row-reverse;
+	justify-content: right;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5%;
+	background: transparent;
+	box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+  }
+	nav#second ul{
+	  list-style: none;
+	  position: relative;
+	  float: right;
+	  margin-right: 100px;
+	  display: inline-table;
+	}
+	  nav#second ul li{
+		float: left;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	  }
+  
+	  nav#second ul li:hover{background: rgba(0,0,0,.15);}
+	  nav#second ul li:hover > ul{display: block;}
+	  nav#second ul li{
+		float: left;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	  }
+		nav#second ul li a{
+		  display: block; 
+		  padding: 30px 20px;
+		  color: #fff; 
+		  font-size: .9em;
+		  letter-spacing: 1px;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		}
+		nav#second ul ul{
+		  display: none;
+		  background: rgba(37, 37, 37, 0.9);
+		  position: absolute; 
+		  top: 100%;
+		  box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+		  border: 1px solid rgba(0,0,0,.1);
+		}
+		  nav#second ul ul li{float: none; position: relative;}
+			nav ul ul li a {
+			  padding: 15px 30px; 
+			  border-bottom: 1px solid rgba(0,0,0,.05);
+			}
+			nav#second ul ul ul {
+			  position: absolute; 
+			  left: 100%; 
+			  top:0;
+			}	
+
+
+/*
+        **********
+        SEARCH BAR
+        **********
+*/
+
+.searchBox input {
+	width: 8px;
+	height: 8px;
+	padding: 5px;
+	font-style: bold;
+	font-family: sans-serif;
+	font-size: .9em;
+	text-transform: capitalize;
+	border-radius: 50%;
+	background: transparent;
+	transition: .4s;
+	outline: none;
+	color: white;
+	border:3px solid white;
+}
+
+.searchBox input + span {
+	position: absolute;
+	width: 3px;
+	height: 6px;
+	background: white;
+	transform: rotate(-45deg);
+	top: 55%;
+	left: 20%;
+	transition: .4s;
+}
+.searchBox input:hover {
+	cursor: pointer;
+}
+
+.searchBox input:hover:focus{
+	cursor: text;
+}
+.searchBox input:focus {
+	width: 200px;
+	height: 25px;
+	padding: 5px 10px;
+	border-radius: 40px;
+}
+
+.searchBox input:focus + span{
+	opacity: 0;
+}

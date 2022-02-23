@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <%- include('../includes/head') %> 
+    <%- include('../includes/head') %>
 </head>
 
 <body>
     <header>
         <%- include('../includes/header') %>
     </header>
+
     <main>
         <section class="banner">
             <div class="slide-container">
@@ -32,12 +33,139 @@
                 </div>
             </div>
         </section>
+
+        <div class="titulos">
+            <a id="TituloGold">DISCOVER </a><a id="TituloSilver">Featured Products</a>
+        </div>
+
+        <section id="sales_cat">
+            <div>
+                <article class="sales" id="sale1">
+                    <a href="/"><img src="../assets/sale1.png" alt="sale_img1"></a>
+                </article>
+                <h2>Grant´s Triple Wood</h2>
+                <h3>Blended Scotch Whisky</h3>
+                <br>
+                <h4>ARS$5.890</h4>
+                <h4><p>$7.550</p></h4>
+            </div>
+            <div>
+                <article class="sales" id="sale2">
+                    <a href="/"><img src="../assets/sale2.png" alt="sale_img2"></a>
+                </article>
+                <h2>Jack Daniels</h2>
+                <h3>Tennessee Whiskey</h3>
+                <br>
+                <h4>ARS$5.890</h4>
+                <h4><p>$7.550</p></h4>
+            </div>
+            <div>
+                <article class="sales" id="sale3">
+                    <a href="/"><img src="../assets/sale3.png" alt="sale_img3"></a>
+                </article>
+                <h2>Johnnie Walker</h2>
+                <h3>Red Label</h3>
+                <br>
+                <h4>ARS$5.890</h4>
+                <h4><p>$7.550</p></h4>
+            </div>
+            <div>
+                <article class="sales" id="sale4">
+                    <a href="/"><img src="../assets/sale4.png" alt="sale_img4"></a>
+                </article>
+                <h2>Jim Beam</h2>
+                <h3>Bourbon White</h3>
+                <br>
+                <h4>ARS$5.890</h4>
+                <h4><p>$7.550</p></h4>
+            </div>
+        </section>
+
+        <div class="titulos">
+            <a id="TituloGold">DISCOVER </a><a id="TituloSilver">Our Brands</a>
+        </div>
+
+        <section id="brand_cat">
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/ballantines.png" alt="brand1"></a>
+            </article>
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/chivas.png" alt="brand2"></a>
+            </article>
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/Grants.png" alt="brand3"></a>
+            </article>
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/JohnnieWalker.png" alt="brand4"></a>
+            </article>
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/whitehorse.png" alt="brand5"></a>
+            </article>
+            <article class="brand">
+                <a href="/"><img src="../assets/brands/williamlawson.png" alt="brand6"></a>
+            </article>
+        </section>
+        
+        <section id="explore">
+            <img src="../assets/breath2.jpg" alt="Explore_background">
+            <p>The world has changed dramatically. But our quality never has.</p>
+            <br>
+            <p><a href="/">Explore more...</a></p>
+        </section>
+
+        <div class="titulos">
+            <a id="TituloGold">DISCOVER </a><a id="TituloSilver">Top-rated Products</a>
+        </div>
+
+        <section class="calificados_cat">
+            <div id="calificados_1">
+                <div>
+                    <article>
+                        <a href="/"><img src="../assets/sale1.png" alt="mejor_calificado1"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+                <div>
+                    <article>
+                        <a href="/"><img src="../assets/sale2.png" alt="mejor_calificado2"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+                <div>
+                    <article>
+                        <a href="/"><img src="../assets/sale3.png" alt="mejor_calificado3"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+            </div>
+
+            <div id="calificados_1">
+                <div>
+                    <p></p>
+                    <article>
+                        <a href="/"><img src="../assets/sale1.png" alt="mejor_calificado1"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+                <div>
+                    <article>
+                        <a href="/"><img src="../assets/sale2.png" alt="mejor_calificado2"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+                <div>
+                    <article>
+                        <a href="/"><img src="../assets/sale3.png" alt="mejor_calificado3"></a>
+                    </article>
+                    <img src="../assets/estrellas.png" alt="puntuacion" id="calif">
+                </div>
+            </div>
+        </section>
+
     </main>
 
-
-
     <footer>
-
+        <%- include('../includes/footer') %>
     </footer>
 
 </body>
