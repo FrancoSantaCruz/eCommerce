@@ -1,0 +1,20 @@
+.registro {
+    background-color: rgba(82, 82, 82, 0.8);
+    border: 2px solid rgb(100,100,100);
+    width: 600px;
+    margin: 150px 400px 100px 480px;
+}
+
+.registro p{
+    font-size: 1rem;
+    color: rgb(202, 132, 2);
+    margin: 2%;
+}
+
+.registro input{
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 1px dotted silver;
+    border-radius: 10%;
+    height: 1.5em;
+}

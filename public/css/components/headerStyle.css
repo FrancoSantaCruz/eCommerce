@@ -45,6 +45,7 @@ nav#first{
     position: relative;
 	left: 100px;
     bottom: 75px;
+	width: 50%;
 }
 
 nav#first a{
@@ -74,18 +75,14 @@ nav#first a{
         ***************************
 */
 
-.needs{
-	display: flex;
-	
-}
+
 nav#second{
-	flex-direction: row-reverse;
 	justify-content: right;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 5%;
+	width: 100%;
 	background: transparent;
 	box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
 	border: 1px solid rgba(0,0,0,.1);
@@ -94,7 +91,6 @@ nav#second{
 	  list-style: none;
 	  position: relative;
 	  float: right;
-	  margin-right: 100px;
 	  display: inline-table;
 	}
 	  nav#second ul li{
