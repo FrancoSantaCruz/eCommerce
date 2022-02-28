@@ -1,88 +1,114 @@
-.info{
+.foot{
     display: flex;
     flex-direction: row;
-    background-color: rgba(59, 54, 54, 0.6);
-    justify-content: space-around;
-    font-size: 17px;
-}
-
-/*
-            **********
-            BLOQUE UNO
-            **********
-*/
-
-.bloqueUno figure img{
-    width: 8em;
-    height: 8em;
-}
-
-div#contacts a{
-    color: inherit;
-    font-size: 2em;
-    padding-left: 0.5em;
+    justify-content: center;
+    background-color: rgba(37, 37, 37, 0.9);
 }
 
 
-div#info{
-    padding-top: 30px;
-    padding-bottom: 15px;
+.bloqueUno{
+    width: 20rem;
+    margin: 1.5rem;
+    border-right: 1px solid rgb(58, 58, 58);
 }
-
-
-/*
-            **********
-            BLOQUE DOS
-            **********
-*/
 
 .bloqueDos{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    margin: 1.5rem;
 }
 
-.bloqueDos ul{
-    flex-direction: row;
-    margin: 50px;
-    color: rgba(255, 174, 0, 0.596);
+.bloqueTres{
+    width: 20rem;
+    margin: 1.5rem;
+    border-left: 1px solid rgb(58, 58, 58);
 }
 
+#contacts{
+    display: flex;
+    justify-content: center;
+}
 
-/*
-            **********
-            BLOQUE TRES
-            **********
-*/
+#contacts i{
+    color: rgb(100,100,100);
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#informacion{
+    margin: 1.2rem;
+    color: rgb(100,100,100);
+}
+
+#informacion p{
+    font-size: 0.9rem;
+}
+
+.bloqueDos figure{
+    display: flex;
+    justify-content: center;
+}
+
+.bloqueDos img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.bloqueDos div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 1rem;
+}
+
+.bloqueDos a{
+    font-size: 0.8rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    color: rgb(100,100,100);
+    text-decoration: underline;
+}
+
+.bloqueTres{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .bloqueTres p{
-    padding-top: 50px;
-    font-size: 17px;
-    align-items: center;
-    color: rgba(255, 174, 0, 0.596);
+    display: flex;
+    justify-content:center;
+    color: rgb(100,100,100);
+    font-size: 0.8rem;
+}
+
+.bloqueTres a{
+    text-decoration: underline;
+    margin-bottom: 0.8rem;
+    color: rgb(100,100,100);
+}
+
+.bloqueTres div{
+    display: flex;
+    justify-content: center;
+    color: rgb(100,100,100);
 }
 
 .bloqueTres i{
-    font-size: 3em;
-    padding-right: 15px;
-    padding-top: 50px;
+    font-size: 2rem;
+    margin: 0.5rem;
 }
 
-
-
-/*
-            *****************
-            SECTION COPYRIGHT
-            *****************
-*/
 
 
 .copyright{
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 174, 0, 0.596); 
+    background-color: rgba(51, 51, 51, 0.9);
 }
 
 .copyright a{
-    text-decoration:underline;
-    color: inherit;
+    color: rgb(100,100,100);
 }
-

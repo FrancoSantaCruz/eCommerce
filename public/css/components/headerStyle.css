@@ -1,5 +1,9 @@
+html{
+    font-size: 20px;
+}
+
 header{
-    height: 150px;
+    height: 7.5rem;
     background: rgba(37, 37, 37, 0.9);
 }
 
@@ -23,9 +27,9 @@ figcaption {
 
 .logo img{
     position: relative;
-    top: 45px;
-    width: 12em;
-    height: 12em;
+    top: 1.5rem;
+    width: 12rem;
+    height: 12rem;
 }
 
 /*
@@ -43,14 +47,18 @@ nav{
 nav#first{
     justify-content: left;
     position: relative;
-	left: 100px;
-    bottom: 75px;
+	left: 1rem;
+    bottom: 6rem;
 	width: 50%;
 }
 
 nav#first a{
-    padding-left: 40px;
-    font-size: 20px;
+	display: flex;
+	justify-content: center;
+	width: 5rem;
+    margin-left: 1rem;
+	margin-right: 1rem;
+    font-size: 1rem;
 }
 
 
@@ -83,58 +91,77 @@ nav#second{
 	left: 0;
 	height: 5%;
 	width: 100%;
-	background: transparent;
+	background: rgba(37, 37, 37, 0.8);
 	box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
 	border: 1px solid rgba(0,0,0,.1);
-  }
-	nav#second ul{
-	  list-style: none;
-	  position: relative;
-	  float: right;
-	  display: inline-table;
-	}
-	  nav#second ul li{
-		float: left;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
-	  }
+}
+
+nav#second ul{
+	list-style: none;
+	position: relative;
+	float: right;
+	display: inline-table;
+}
+
+nav#second ul li{
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
   
-	  nav#second ul li:hover{background: rgba(0,0,0,.15);}
-	  nav#second ul li:hover > ul{display: block;}
-	  nav#second ul li{
-		float: left;
-		-webkit-transition: all .2s ease-in-out;
-		-moz-transition: all .2s ease-in-out;
-		transition: all .2s ease-in-out;
-	  }
-		nav#second ul li a{
-		  display: block; 
-		  padding: 30px 20px;
-		  color: #fff; 
-		  font-size: .9em;
-		  letter-spacing: 1px;
-		  text-decoration: none;
-		  text-transform: uppercase;
-		}
-		nav#second ul ul{
-		  display: none;
-		  background: rgba(37, 37, 37, 0.9);
-		  position: absolute; 
-		  top: 100%;
-		  box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
-		  border: 1px solid rgba(0,0,0,.1);
-		}
-		  nav#second ul ul li{float: none; position: relative;}
-			nav ul ul li a {
-			  padding: 15px 30px; 
-			  border-bottom: 1px solid rgba(0,0,0,.05);
-			}
-			nav#second ul ul ul {
-			  position: absolute; 
-			  left: 100%; 
-			  top:0;
-			}	
+nav#second ul li:hover{
+	background: rgba(0,0,0,.15);
+}
+
+nav#second ul li:hover > ul{
+	display: block;
+}
+
+nav#second ul li{
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+nav#second ul li a{
+	display: block; 
+	padding: 30px 20px;
+	color: #fff; 
+	font-size: .9em;
+	letter-spacing: 1px;
+	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+nav#second ul ul{
+	display: none;
+	background: rgba(37, 37, 37, 0.9);
+	position: absolute; 
+	top: 100%;
+	box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+	border: 1px solid rgba(0,0,0,.1);
+}
+
+nav#second ul ul li{
+	float: none; position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 30px; 
+	border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+nav#second ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:0;
+}	
+
+nav#second ul li ul li a#test{
+	font-size: 0.6rem;
+}
 
 
 /*
@@ -144,9 +171,9 @@ nav#second{
 */
 
 .searchBox input {
-	width: 8px;
-	height: 8px;
-	padding: 5px;
+	width: 0.4rem;
+	height: 0.4rem;
+	padding: 0.25rem;
 	font-style: bold;
 	font-family: sans-serif;
 	font-size: .9em;
@@ -161,8 +188,8 @@ nav#second{
 
 .searchBox input + span {
 	position: absolute;
-	width: 3px;
-	height: 6px;
+	width: 0.15rem;
+	height: 0.30rem;
 	background: white;
 	transform: rotate(-45deg);
 	top: 55%;
@@ -177,10 +204,10 @@ nav#second{
 	cursor: text;
 }
 .searchBox input:focus {
-	width: 200px;
-	height: 25px;
-	padding: 5px 10px;
-	border-radius: 40px;
+	width: 10rem;
+	height: 1.5rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 2rem;
 }
 
 .searchBox input:focus + span{

@@ -9,8 +9,34 @@
     <header>
         <%- include('../includes/header') %>
     </header>
+    <div class="help">
+        <section class="registro">
 
-    <h1>LOGIN PAGE</h1>
+            <h2>
+                Ingresa en tu cuenta
+            </h2>
+
+            <form action="/login/check" method="post">
+                <div id="ParteA">
+                    <p>
+                        <label for="Email">Email: </label>
+                        <input type="email" name="email" id="Email" placeholder="Email">
+                    </p>
+                    <p>
+                        <label for="Password">Contraseña: </label>
+                        <input type="password" name="password" id="Password" placeholder="Contraseña">
+                    </p>
+                </div>
+                <div id="ParteC">
+                    <input class="button" type="submit" value="Login">
+                </div>
+            </form>
+
+            <div class="log">
+                <p>No tenes una cuenta todavía? <a href="/register"> Registrate aca</a></p>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <%- include('../includes/footer') %>
