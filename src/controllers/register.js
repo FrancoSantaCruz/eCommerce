@@ -1,4 +1,6 @@
 const { user } = require('../database/models');
+const { validationResult } = require("express-validator");
+const bcrypt = require('bcryptjs');
 
 const controller = {
     index: async (req, res) => {
@@ -17,21 +19,29 @@ const controller = {
         }
     },
     create: async (req, res) => {
+
+        const hPass = await bcrypt.hash(req.body.password, 10);
         try {
-            let data = {
-                name: req.body.name,
-                lastname: req.body.lastname,
-                province: req.body.province,
-                location: req.body.location,
-                codpostal: req.body.codpostal ? req.body.codpostal : null,
-                address: req.body.address,
-                email: req.body.email,
-                password: req.body.password,
-                legal: req.body.legal == 1? true : false,
-                conditions: req.body.conditions == 1? true : false
+            let errors = validationResult(req);
+            if (errors.isEmpty()) {
+                let data = {
+                    name: req.body.name,
+                    lastname: req.body.lastname,
+                    province: req.body.province,
+                    location: req.body.location,
+                    codpostal: req.body.codpostal,
+                    address: req.body.address,
+                    email: req.body.email,
+                    password: hPass,
+                    legal: req.body.legal == '1' ? true : false,
+                    conditions: req.body.conditions == '1' ? true : false
+                }
+                const usuario = await user.create(data);
+                res.redirect('/users');
+            } else {
+                return res.render('./users/register', { errors: errors.errors })
             }
-            const usuario = await user.create(data);
-            res.redirect('/users');
+
         } catch (error) {
             res.status(500).send({ message: error.message });
         }

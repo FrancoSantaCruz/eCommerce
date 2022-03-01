@@ -25,7 +25,6 @@ app.use(session({
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-
 //Routes
 app.use(require('./routes/main'));
 app.use(require('./routes/register'));

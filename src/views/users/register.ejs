@@ -15,6 +15,17 @@
             <h2>
                 Crea tu cuenta
             </h2>
+            
+            <% if (typeof errors != 'undefined') { %>
+                <p style="color: red;">ERROR</p>
+                <ul>
+                    <% for( let i = 0; i < errors.length; i++ ) { %>
+                        <li>
+                            <%= errors[i].msg %> 
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
 
             <form action="/register/guardar" method="post">
                 <div id="ParteA">
@@ -61,11 +72,11 @@
                 <div id="ParteB">
                     <p>
                         <label for="legal">Soy mayor de edad</label>
-                        <input type="checkbox" name="legal" value="1" id="legal">
+                        <input type="checkbox" name="legal" value='1' id="legal">
                     </p>
                     <p>
                         <label for="condiciones">Acepto los terminos y condiciones del sitio</label>
-                        <input type="checkbox" name="conditions" value="1" id="condiciones">
+                        <input type="checkbox" name="conditions" value='1' id="condiciones">
                     </p>
                 </div>
                 <div id="ParteC">

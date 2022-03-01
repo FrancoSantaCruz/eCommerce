@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     const alias = "user";
     const structure = {
-        ID: {
+        user_id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
