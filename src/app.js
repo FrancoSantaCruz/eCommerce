@@ -28,7 +28,8 @@ app.use(express.urlencoded({extended:true}));
 //Routes
 app.use(require('./routes/main'));
 app.use(require('./routes/register'));
-app.use(require('./routes/login.js'));
+app.use(require('./routes/login'));
 app.use(require('./routes/cart'));
 app.use(require('./routes/product_detail'));
 app.use(require('./routes/aboutus'));
+app.use(require('./routes/profile'))

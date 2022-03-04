@@ -9,15 +9,51 @@
     <header>
         <%- include('../includes/header') %>
     </header>
-
-    <h1>Profile of</h1><%=  %>
-    <p>Nombre: </p>
-    <p>Apellido: </p>
-    <p>email: </p>
     
-    <footer>
-        <%- include('../includes/footer') %>
-    </footer>
+    <% if (typeof usuario !='undefined' ) { %>
+        <section class="profile">
+            <div id="name">
+                <p>
+                    <%= usuario.name %>
+                </p>
+                <p>
+                    <%= usuario.lastname %>
+                </p>
+            </div>
+            <div id="location">
+                <p>
+                    <%= usuario.province %>
+                </p>
+                <p>
+                    <%= usuario.location %>
+                </p>
+            </div>
+            <div id="locationSpec">
+                <p>
+                    <%= usuario.codpostal %>
+                </p>
+                <p>
+                    <%= usuario.address %>
+                </p>
+            </div>
+            <div id="email">
+                <p>
+                    <%= usuario.email %>
+                </p>
+            </div>
+
+            <input class="button" type="submit" value="Editar Perfil">
+
+        </section>
+        <% } else { %>
+
+            <p style="color: red;">USER NOT FOUND</p>
+
+            <% } %>
+
+                <footer>
+                    <%- include('../includes/footer') %>
+                </footer>
 </body>
 
 </html>

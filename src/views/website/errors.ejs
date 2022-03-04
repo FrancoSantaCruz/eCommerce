@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../includes/header') %>
+    </header>
+    <div id="errorCenter">
+        <section class="errorMessage">
+            <% if (typeof errors !='undefined' ) { %>
+                <p>ERROR</p>
+                <div>
+                    <ul>
+                        <% for( let i=0; i < errors.length; i++ ) { %>
+                            <li>
+                                <a id="errorArr"><%= errors[i].msg %></a>
+                            </li>
+                            <% } %>
+                    </ul>
+                </div>
+                <% } %>
+        </section>
+    </div>
+    <footer>
+        <%- include('../includes/footer') %>
+    </footer>
+</body>
+
+</html>

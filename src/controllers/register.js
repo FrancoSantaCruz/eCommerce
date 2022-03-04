@@ -37,7 +37,9 @@ const controller = {
                     conditions: req.body.conditions == '1' ? true : false
                 }
                 const usuario = await user.create(data);
-                res.redirect('/users');
+                console.log(usuario);
+                let param = usuario.user_id;
+                res.redirect('/profile/'+ param);
             } else {
                 return res.render('./users/register', { errors: errors.errors })
             }

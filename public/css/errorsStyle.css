@@ -1,0 +1,27 @@
+.errorMessage{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    background-color: rgba(231, 0, 0, 0.658);
+    width: 30rem;
+    margin: 10rem;
+}
+
+#errorCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.errorMessage p{ 
+    color: rgb(202, 132, 2);
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.errorMessage div{
+    margin: 1rem
+}
+
+#errorArr {
+    color: silver;
+}
