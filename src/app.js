@@ -15,7 +15,7 @@ app.listen(app.get('port'),listen);
 
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.use(express.static(path.resolve(__dirname, '../uploads')));
-app.use(method('_method'));
+app.use(method('m'));
 app.use(cookie());
 app.use(session({
     secret: 'sequelize class',
@@ -25,11 +25,15 @@ app.use(session({
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+
+
+
 //Routes
 app.use(require('./routes/main'));
-app.use(require('./routes/register'));
-app.use(require('./routes/login'));
+
+app.use('/users', require('./routes/users.js'));
+app.use('/products', require('./routes/products.js'));
+
+
 app.use(require('./routes/cart'));
-app.use(require('./routes/product_detail'));
-app.use(require('./routes/aboutus'));
-app.use(require('./routes/profile'))
+
