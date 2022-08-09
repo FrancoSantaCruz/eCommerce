@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../includes/header') %>
+    </header>
+
+    <h1> <%= producto.name %> </h1>
+    <p> <%= producto.description %> </p>
+    <h2>Price: $<%= producto.price %> </h2>
+    <h2>Stock: <%= producto.stock %> </h2>
+
+    <footer>
+        <%- include('../includes/footer') %>
+    </footer>
+</body>
+</html>
+

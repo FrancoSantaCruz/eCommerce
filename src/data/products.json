@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Marcos",
+    "description": "Soy gay",
+    "price": 10,
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "name": "Franco",
+    "description": "hola",
+    "price": 100000,
+    "stock": 1
+  },
+  {
+    "id": 3,
+    "name": "Martina",
+    "description": "chau",
+    "price": 1000,
+    "stock": 427
+  },
+  {
+    "id": 4,
+    "name": "Testing",
+    "description": "ajsdjasd",
+    "price": 42425,
+    "stock": 88
+  },
+  {
+    "id": 5,
+    "name": "Testtt",
+    "description": "tttttt",
+    "price": 213,
+    "stock": 59
+  },
+  {
+    "id": 6,
+    "name": "2134245",
+    "description": "asfasdghygdgsad",
+    "price": 21524,
+    "stock": 80
+  }
+]

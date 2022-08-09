@@ -25,5 +25,5 @@
     
 ## Contacto & Documentación
     
-    - www.linkedin.com/in/francoscz/
+    - https://www.linkedin.com/in/FrancoSCz/
     - https://sczfranco.atlassian.net/l/cp/10B1bN0R

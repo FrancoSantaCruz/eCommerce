@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../includes/header') %>
+    </header>
+
+    <h1>Create a product</h1>
+
+    <form action="/products/save" method="post">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </fieldset>
+        <fieldset>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="Price">Price</label>
+            <input type="number" name="price" id="price" placeholder="Price" min="1">
+        </fieldset>
+        <fieldset>
+            <label for="">Stock</label>
+            <input type="range" name="stock" id="stock" min="1" max="100" step="1">
+        </fieldset>
+        <fieldset>
+            <button type="submit">Save</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <%- include('../includes/footer') %>
+    </footer>
+</body>
+</html>

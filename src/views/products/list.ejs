@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../includes/header') %>
+    </header>
+
+    <h1> Lista de Productos </h1>
+
+    <% if (productos.length > 0) { %>
+        <ul>
+            <% productos.forEach(p => { %>
+                <li><a href="/products/<%= p.id %>"> <%= p.name %> </a></li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+
+        <h2> No se encontró ningún producto</h2>
+
+    <% } %> 
+
+
+    <footer>
+        <%- include('../includes/footer') %>
+    </footer>
+</body>
+</html>
