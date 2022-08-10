@@ -14,7 +14,9 @@
     <p> <%= producto.description %> </p>
     <h2>Price: $<%= producto.price %> </h2>
     <h2>Stock: <%= producto.stock %> </h2>
-
+    <nav>
+        <a href="/products/edit/<%= producto.id %>">Edit</a>
+    </nav>
     <footer>
         <%- include('../includes/footer') %>
     </footer>

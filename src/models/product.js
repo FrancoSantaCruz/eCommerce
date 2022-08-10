@@ -21,6 +21,20 @@ const model = {
         let lista = model.list().sort( (a,b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
         lista.push(data);
         model.write(lista);
+    },
+    update: data => {
+        let products = model.list().sort( (a,b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+        products = products.map((prod) => {
+            if(prod.id == data.id) {
+                prod.name = data.name;
+                prod.description = data.description;
+                prod.price = Number(data.price);
+                prod.stock = Number(data.stock);
+                return prod;
+            }
+            return prod;
+        })
+        model.write(products);
     }
 }
 

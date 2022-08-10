@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../includes/head.ejs') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../includes/header.ejs') %>
+    </header>
+    <p id="testing"> TEST </p>
+    <h1>Edit Product</h1>
+    
+    <form action="/products/update?m=PUT" method="post">
+
+        <!-- Permite ver el ID del producto que se está mandando -->
+        <input type="hidden" name="id" value="<%= producto.id %>">
+        
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" value="<%= producto.name %>">
+        </fieldset>
+        <fieldset>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10"><%= producto.description %></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="Price">Price</label>
+            <input type="number" name="price" id="price" placeholder="Price" min="1" value="<%= producto.price %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Stock</label>
+            <input type="range" name="stock" id="stock" min="1" max="100" step="1" value="<%= producto.stock %>">
+        </fieldset>
+        <fieldset>
+            <button type="submit">Save</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <%- include('../includes/footer') %>
+    </footer>
+</body>
+</html>

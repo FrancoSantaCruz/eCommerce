@@ -1,4 +1,4 @@
-const {list, all, filter, match, generate, create} = require('../models/product');
+const {list, all, filter, match, generate, create, update} = require('../models/product');
 
 const controller = {
     index: (req,res) => {
@@ -35,6 +35,23 @@ const controller = {
         create(nuevo);
 
         return res.redirect('/products/'+nuevo.id);
+    }, 
+    update: (req,res) => {
+        const {id} = req.params;
+        let prod = id ? match('id', id) : null;
+        return prod ? 
+        res.render('./products/update.ejs', {
+            title: "Editing product",
+            producto: prod,
+        }) : 
+        res.render('error', {
+            title:"ERROR",
+            error:"No se encontró ningún producto"
+        })
+    },
+    modify: (req,res) => {
+        update(req.body);
+        return res.redirect('/products/'+req.body.id);
     }
 }
 
